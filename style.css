@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: mintcream;
+    color: rgb(6, 88, 6);
+}
+
+/* header */
+header {
+    background: #3b9b2a;
+background: linear-gradient(96deg, rgba(59, 155, 42, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+header p {
+    font-size: 17px;
+}
+
+/* container */
+.container {
+   width: 85%;
+   max-width: 1000px;
+   margin: 30px auto;
+}
+
+/* notes boxes */
+.box {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid green;
+    box-shadow: 0 3px 10px mediumseagreen;
+      cursor: pointer;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover{
+     transform: translateY(-10px); 
+       box-shadow: 0 12px 20px  mediumseagreen;
+}
+
+.box h2{
+    color: green;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.box p{
+    font-size: 16px;
+}
+
+.box ul{
+    padding-left: 25px;
+}
+.box li{
+    margin-bottom: 8px;
+}
+
+/* grid example */
+.grid-example{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.grid-example div{
+    background-color: whitesmoke;
+    color: green;
+    padding: 22px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid green;
+}
+
+.grid-example div:hover{
+    background: #3b9b2a;
+background: linear-gradient(96deg, rgba(59, 155, 42, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    color: white;
+    /* transform: translateY(-8px); */
+}
+
+.explanation{
+    color: green;
+    font-style: italic;
+}
+
+/* grid vs flexbox */
+.comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.item {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.item h3 {
+    color:rgb(2, 101, 2);
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+  background: #3b9b2a;
+background: linear-gradient(96deg, rgba(59, 155, 42, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* resposive design */
+@media only screen and (max-width:600px) {
+    .container{
+        width: 92%;
+    }
+
+    header h1{
+        font-size: 32px;
+    }
+
+    .box {
+        padding: 18px;
+    }
+    .comparison{
+        grid-template-columns: 1fr;
+    }
+}
